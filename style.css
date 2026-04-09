@@ -15,4 +15,25 @@
     .gallery img { width: 100%; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } 
     .gallery{display:grid;grid template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
     .gallery img{width:100%;height:200px;object-fit:cover;border-radius: 8px;}
+/* Existing styles ... */
+
+  .gallery img {
+    width: 100%; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Add a smooth transition for the hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Add the hover effect */
+  .gallery img:hover {
+    transform: scale(1.05);  /* Slightly zoom in */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Add a subtle glow */
+    cursor: pointer; /* Change the cursor to a pointer */
+  }
+
+  /* Optional: Add a background color to the body */
+  body {
+    background: #f7f9fc; /* Light bluish-gray background */}
+      
   </style>
